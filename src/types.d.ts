@@ -1,6 +1,5 @@
 import type { JSXElement, Accessor, Owner } from "solid-js"
 import type { SetStoreFunction } from "solid-js/store"
-import type { RouteSectionProps } from "@solidjs/router"
 
 export type Expand<T> = T extends infer O ? { [K in keyof O]: O[K] } : never
 
@@ -54,7 +53,6 @@ export type ContextProps = Expand<{
   setCaches: SetStoreFunction<Caches>
   /** 缓存回调函数 */
   setActive: (id: string, t: Activate, cb: () => void, t1: SetType) => void
-  /** 开关 */
 }>
 
 export type Activate = "aSet" | "dSet" | "aOnceSet"
