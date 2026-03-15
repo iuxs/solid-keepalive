@@ -18,7 +18,7 @@ const _ = (t: Activate, cb: () => void) => {
 /**
  *  @description 进入缓存
  * ```tsx
- * import { onActivated } from 'solid-keepalive'
+ * import { onActivated } from '@iuxs/solid-keep-alive'
  * //use
  * onActivated(()=> console.log(234))
  * ```
@@ -30,7 +30,7 @@ export const onActivated = (cb: () => void) => {
 /**
  * @description  离开缓存
  * ```tsx
- * import { onDeactivated } from 'solid-keepalive'
+ * import { onDeactivated } from '@iuxs/solid-keep-alive'
  * onDeactivated(()=> console.log(234))
  * ```
  */
@@ -41,7 +41,7 @@ export const onDeactivated = (cb: () => void) => {
 /**
  * @description  进入缓存,只会执行一次
  * ```tsx
- * import { onActivatedOnce } from 'solid-keepalive'
+ * import { onActivatedOnce } from '@iuxs/solid-keep-alive'
  * onDeactivated(()=> console.log(234))
  * ```
  */

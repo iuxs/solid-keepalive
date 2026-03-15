@@ -1,8 +1,8 @@
-# solid-keepalive
+# solid-keep-alive
 
 #### 安装(install)
 
-- pnpm add solid-keepalive / npm i solid-keepalive / yarn add solid-keepalive
+- pnpm add @iuxs/solid-keep-alive / npm i @iuxs/solid-keep-alive / yarn add @iuxs/solid-keep-alive
 
 #### 参数(describe)
 
@@ -29,7 +29,7 @@
 // src/index.tsx
 import { render } from "solid-js/web"
 
-import { AliveProvider, aliveTransfer } from "solid-keepalive"
+import { AliveProvider, aliveTransfer } from "@iuxs/solid-keep-alive"
 // import { userInfo } from "./store/userInfo.ts"
 
 import "@/assets/css/index.css"
@@ -93,7 +93,7 @@ render(
 ```tsx
 // src/router/index.ts
 import { lazy } from "solid-js"
-import { aliveTransfer } from "solid-keepalive"
+import { aliveTransfer } from "@iuxs/solid-keep-alive"
 const routes = [
   {
     path: "/",
@@ -132,7 +132,7 @@ export default routes
 // src/view/Home/index.tsx
 
 import { createContext, useContext } from "solid-js"
-import { onActivated, onDeactivated, type Setter } from "solid-keepalive"
+import { onActivated, onDeactivated, type Setter } from "@iuxs/solid-keep-alive"
 import type { RouteSectionProps } from "@solidjs/router"
 export const DataContext = createContext<{
   data: () => string
@@ -173,7 +173,7 @@ export default function Home(props: RouteSectionProps) {
 
 ```tsx
 import { getOwner, useContext } from "solid-js"
-import { onActivated, useAliveContext } from "solid-keepalive"
+import { onActivated, useAliveContext } from "@iuxs/solid-keep-alive"
 import { DataContext } from "."
 
 export default function C() {
@@ -201,6 +201,7 @@ export default function C() {
 
 ```tsx
 // @/layout/Container/index.tsx
+import { aliveTransfer } from "@iuxs/solid-keep-alive"
 import type { RouteSectionProps } from "@solidjs/router"
 import Aside from "xxxx"
 

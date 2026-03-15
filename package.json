@@ -1,8 +1,8 @@
 {
-  "name": "@iuxs/solid-keepalive",
-  "version": "0.0.1",
+  "name": "@iuxs/solid-keep-alive",
+  "version": "0.0.2",
   "author": "1iuxs",
-  "description": "solid-keepalive",
+  "description": "@iuxs/solid-keep-alive",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -16,7 +16,7 @@
     "solidjs",
     "keep-alive",
     "solid-alive",
-    "solid-keepalive"
+    "solid-keep-alive"
   ],
   "files": [
     "package.json",
